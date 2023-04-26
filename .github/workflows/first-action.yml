@@ -4,10 +4,13 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Clonar repositorio
+      - name: Clone repository
         uses: actions/checkout@v2
 
-      - name: Print Hello
+      - name: Set permissions
+        run: chmod +x scripts/helloworld.sh
+
+      - name: Use script
         run: scripts/helloworld.sh
 
       - name: Print bye
