@@ -6,8 +6,9 @@ jobs:
     steps:
       - name: Clonar repositorio
         uses: actions/checkout@v2
+
       - name: Print Hello
-        # run: echo "Hello World Action"
-        run: ls
+        run: .scripts/helloworld.sh
+        
       - name: Print bye
         run: echo "bye bye"
