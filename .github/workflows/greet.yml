@@ -1,4 +1,4 @@
-name: First workflow
+name: Greet workflow
 
 on: workflow_dispatch
 
